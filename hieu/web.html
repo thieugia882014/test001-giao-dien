@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Lato", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        .w3-tag,
+        .fa {
+            cursor: pointer
+        }
+
+        .w3-tag {
+            height: 15px;
+            width: 15px;
+            padding: 0;
+            margin-top: 6px
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-large w3-light-grey">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#plans" class="w3-button w3-block">Plans</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block">About</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-block">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+        <div class="w3-panel">
+            <input type="text" placeholder="Search..">
+                <i class="fa fa-search"></i>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="w3-container">
+            <div class="w3-display-container mySlides" style="display: block;">
+                <img src="https://anh.24h.com.vn/upload/2-2016/images/2016-06-13/1465816208-1465782172-rang-dv1.jpg"
+                    style="width:100%">
+                <div class="w3-display-topleft w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">Răng sứ</span>
+                </div>
+            </div>
+            <div class="w3-display-container mySlides" style="display: none;">
+                <img src="https://alisadental.com/wp-content/uploads/2019/07/nu-cuoi-tu-tin.png" style="width:100%">
+                <div class="w3-display-middle w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">răng đẹp</span>
+                </div>
+            </div>
+            <div class="w3-display-container mySlides" style="display: none;">
+                <img src="https://petshopsaigon.vn/wp-content/uploads/2020/02/cho-co-bao-nhieu-rang-2.png"
+                    style="width:100%">
+                <div class="w3-display-topright w3-container w3-padding-32">
+                    <span class="w3-white w3-padding-large w3-animate-bottom">răng chó</span>
+                </div>
+            </div>
+
+            <!-- Slideshow next/previous buttons -->
+            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i>
+                </div>
+                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
+                </div>
+
+                <div class="w3-center">
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white w3-white"
+                        onclick="currentDiv(1)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(2)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">
+                    <h2> Chất Liệu</h2>
+                </span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Katana</h3>
+                <p>Chi tiết <a>Katana</a>.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Lava</h3>
+                <p>Chi tiết <a href="#">Lava</a></p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Ceron</h3>
+                <p>Chi tiết <a href="#">Ceron.</a></p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Zico</h3>
+                <p>Chi tiết <a href="#">Zico</a>.</p>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <!-- <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Pricing Plans</h3>
+      <p>Choose a pricing plan that fits your needs.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+        <!-- Grid -->
+        <div class="w3-row-padding" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Introduce</span>
+            </div>
+
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/267779852_1498987120479849_2224884839759727000_n.jpg?stp=dst-jpg_p960x960&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=e3f864&amp;_nc_ohc=umZe1laThSYAX95x026&amp;tn=Ww8EPO-uFmxsKCoL&amp;_nc_ht=scontent.fhan14-1.fna&amp;oh=00_AT9LGEoRsCJ24vMYbHeJ-VnehmOjYrgY_99hs7ALDXC0tA&amp;oe=6293B074"
+                        alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nguyễn Oai</h3>
+                        <p class="w3-opacity">Nha khoa Thiện Nhân</p>
+                        <p>Có những bác sĩ tay nghê cao hàng đầu</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Liên Hệ</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/281059072_374385014652912_7379765912338246905_n.jpg?stp=dst-jpg_p206x206&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=Dch7XSgQhpkAX_DdS8i&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVKSa2I55o55g_2oHaZWy9xwrt0kx6OYAsw7MjRXw_oDyg&amp;oe=62B55920"
+                        alt="Mike" style="width:100%;height: 200px;">
+                    <div class="w3-container">
+                        <h3>Tuyên Phạm</h3>
+                        <p class="w3-opacity">Nha khoa Thái Bình Dương</p>
+                        <p>Bệnh viện lớn chu đáo tận tâm .</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/282146959_1121671735060414_5177695153968684981_n.jpg?stp=dst-jpg_p206x206&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=lquBDFHsRs4AX8UT1v3&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVIKoCuNrFo4ZgtcXmsKcEfP3yPtOXufWGJh7xuy7W6prA&amp;oe=62B32789"
+                        alt="Jane" style="width:100%;height: 200px;">
+                    <div class="w3-container">
+                        <h3>Bình Phạm</h3>
+                        <p class="w3-opacity">Nha khoa Đông Á</p>
+                        <p>Vui lòng khách đến vừa lòng khách đi.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="w3-center w3-padding-64" id="contact">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                   <h3>  <label style="margin-left: 43%;">Name: </label>  <a href="https://www.facebook.com/bach.bujvan.9" style="margin-left: 10px">Hoàng Bách</a>      </h3>           
+                </div>
+                <div class="w3-section">
+                    <h3>  <label style="margin-left: 43%;">Số Điện Thoại: </label>  <a style="margin-left: 10px" href="tel:+0523189999">0523189999</a> </h3>  
+                </div>
+                <button  type="submit" class="w3-button w3-block w3-black">Send</button>
+            </form>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+            <h4>Footer</h4>
+            <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+                top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+
+
+        <script>
+            // Slideshow
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demodots");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+            }
+        </script>
+
+
+
+    </div>
+</body>
+
+</html>
